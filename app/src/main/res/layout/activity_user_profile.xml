@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE8CF"
+    tools:context=".UserProfile">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_userProfilePic"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="174dp"-->
+<!--        android:layout_marginTop="84dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/tdb2" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img_userProfilePic"
+        android:layout_width="240dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/cbarista"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_userProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Name"
+        android:textColor="#765030"
+        android:textSize="30sp"
+        android:fontFamily="@font/sunny_sunday_ot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_userProfilePic" />
+
+    <TextView
+        android:id="@+id/tv_userProfileAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Age"
+        android:textColor="#765030"
+        android:textSize="30sp"
+        android:fontFamily="@font/sunny_sunday_ot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userProfileName" />
+
+    <TextView
+        android:id="@+id/tv_userProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Email"
+        android:textColor="#765030"
+        android:textSize="30sp"
+        android:fontFamily="@font/sunny_sunday_ot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userProfileAge" />
+
+    <TextView
+        android:id="@+id/tv_userProfileWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Website"
+        android:textColor="#765030"
+        android:textSize="30sp"
+        android:fontFamily="@font/sunny_sunday_ot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_userProfileEmail" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
