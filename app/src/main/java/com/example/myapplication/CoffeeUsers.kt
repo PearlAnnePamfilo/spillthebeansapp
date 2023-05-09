@@ -67,7 +67,7 @@ class CoffeeUsers : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<List<UsersItem>?>, t: Throwable) {
-                
+
             }
         })
     }
